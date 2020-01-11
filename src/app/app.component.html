@@ -1,20 +1,69 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
-</div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/cli">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
+<div class="container">
+  <input class="form-control" id="myInput" type="text" placeholder="Search.." style="margin:10px" [(ngModel)]="value">
+  <h6>You may also search for:</h6>
+  <div class="container">
+    <div class="row row-cols-4" id="sandles">
+      <div class="card">
+        <div class="card-body">
+          #flatshoes<br>
+          16kshoes
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          #heels<br>
+          5kshoes
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          #redshoes<br>
+          6kshoes
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          #sportshoe<br>
+          1kshoes
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="row row-cols-2">
+        <div>
+          <h4 align="center">200k</h4>
+          <p>Number of people talking about #fashion,#shoes</p>
+        </div>
+        <div>
+          <h4 align="center">20k</h4>
+          <p>Number of cofluence influencers talking about #fashion,#shoes</p>
+        </div>
+      </div>
+    </div>
+    <div class="row row-cols-2">
+      <div align="center">
+        <button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false">
+          Top posts
+        </button>
+      </div>
+      <div align="center">
+        <button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false">
+          Latest posts
+        </button>
+      </div>
+    </div>
+    <div class="row row-cols-2 images">
+      <img class="logo" src="assets/download.jpg" *ngIf="value == heels">
+      <img class="logo" src="assets/download (1).jpg" *ngIf="value ==heels">
+      <img class="logo" src="assets/download (2).jpg" *ngIf="value ==heels">
+      <img class="logo" src="assets/download (3).jpg" *ngIf="value ==flatshoes">
+      <img class="logo" src="assets/download (4).jpg" *ngIf="value ==flatshoes">
+      <img class="logo" src="assets/download (5).jpg" *ngIf="value ==flatshoes">
+      <img class="logo" src="assets/download (6).jpg" *ngIf="value ==redshoes">
+      <img class="logo" src="assets/download (7).jpg" *ngIf="value ==redshoes">
+      <img class="logo" src="assets/download (8).jpg" *ngIf="value ==sportshoe">
+      <img class="logo" src="assets/download (9).jpg" *ngIf="value ==sportshoe">
+    </div>
 
+  </div>
+</div>
